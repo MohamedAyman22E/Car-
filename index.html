@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="z-50 relative">
+      <nav
+        class="allContainer flex items-center justify-between py-5 mx-auto fixed top-0 left-0 z-50 bg-bodyColor"
+      >
+        <div class="z-50">
+          <i class="ri-steering-line"></i>
+          <span class="hover:text-firstColor duration-200">elecar</span>
+        </div>
+        <div
+          class="navListMenu backdrop-blur-[96px] duration-500 fixed w-[100%] h-full top-0 right-[-600px] bg-navList 600:bg-transparent 600:static 600:w-auto 600:h-auto"
+        >
+          <ul
+            class="navLinkHeader flex 600:flex-row 600:static 600:items-center 600:justify-center 600:top-auto 600:left-auto 600:translate-x-0 600:translate-y-0 flex-col absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center"
+          >
+            <li
+              class="mx-5 600:my-6 my-6 hover:text-firstColor duration-200 active_link"
+            >
+              <a href="#home"> home</a>
+            </li>
+            <li class="mx-5 600:my-6 my-6 hover:text-firstColor duration-200">
+              <a href="#about">about</a>
+            </li>
+            <li class="mx-5 600:my-6 my-6 hover:text-firstColor duration-200">
+              <a href="#popular">popular</a>
+            </li>
+            <li class="mx-5 600:my-6 my-6 hover:text-firstColor duration-200">
+              <a href="#featured">featured</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu text-2xl 600:hidden z-50">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- start home -->
+    <section class="allContainer" id="home">
+      <div class="text-center">
+        <h2
+          class="text-xl 500:text-2xl 600:text-3xl 700:text-4xl 800:text-5xl 900:text-6xl"
+        >
+          choose the best car
+        </h2>
+        <h4 class="my-3 text-xl 400:text-2xl 700:text-3xl">
+          porsche mission e
+        </h4>
+        <p><i class="ri-flashlight-fill text-firstColor"></i> electric car</p>
+        <div class="px-6">
+          <img src="img/home.png" alt="" class="w-[40%] mx-auto my-5" />
+        </div>
+        <ul class="flex flex-row justify-center gap-[40px]">
+          <li>
+            <i class="ri-temp-hot-fill"></i>
+            <h3 class="text-xl mt-4">24°</h3>
+            <h3 class="text-[10px] text-textColorLight">TEMPERATURE</h3>
+          </li>
+          <li>
+            <i class="ri-dashboard-2-line"></i>
+            <h3 class="text-xl mt-4">873</h3>
+            <h3 class="text-[10px] text-textColorLight">MILEAGE</h3>
+          </li>
+          <li>
+            <i class="ri-flashlight-fill"></i>
+            <h3 class="text-xl mt-4">94%</h3>
+            <h3 class="text-[10px] text-textColorLight">BATTERY</h3>
+          </li>
+        </ul>
+        <button
+          class="mt-10 w-[120px] h-[120px] text-center rounded-full border-2 border-btnHome text-xl shadow-boxShadowHome animate-shadows"
+        >
+          <span
+            class="py-[25px] px-[10px] rounded-full border-2 border-btnHome uppercase"
+            >start</span
+          >
+        </button>
+      </div>
+    </section>
+    <!-- start about -->
+    <section class="about mt-[5%]" id="about">
+      <div
+        class="allContainer flex 1100:flex-row 1100:items-center 1100:justify-center gap-[80px] flex-col"
+      >
+        <div class="1100:w-[50%] relative 600:px-[100px] px-[20px] 1100:p-0">
+          <img src="img/about.png" alt="" class="rounded-[20px]" />
+          <div
+            class="absolute w-[210px] bg-[hsla(0,0%,100%,.1)] backdrop-blur-[16px] py-[1rem] px-[1.5rem ] text-center rounded-[20px] bottom-[-50px] right-[0]"
+          >
+            <h2 class="font-bold text-2xl">2.55+</h2>
+            <p class="400:text-[15px] text-[10px]">
+              Lorem ipsum dolor sit amet amet.
+            </p>
+          </div>
+        </div>
+        <div class="1100:w-[50%]">
+          <h3 class="text-3xl 400:text-4xl">
+            machines with <br />
+            future technology
+          </h3>
+          <p class="my-[40px]">
+            See the future with high-performance electric cars produced by
+            renowned brands. They feature futuristic builds and designs with new
+            and innovative platforms that last a long time.
+          </p>
+          <a
+            href="#about"
+            class="py-[15px] px-[30px] bg-firstColor rounded-[5px] hover:opacity-90 opacity-100 duration-200"
+            >know more</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- start popular -->
+    <section class="popular mt-[80px]" id="popular">
+      <div class="allContainer">
+        <div class="">
+          <h2
+            class="text-center text-xl 400:text-2xl 500:text-3xl 600:text-4xl 700:text-5xl"
+          >
+            Choose Your Electric Car <br />
+            Of The Porsche Brand
+          </h2>
+        </div>
+        <div class="swiper mySwiper">
+          <ul class="swiper-wrapper mb-[50px]">
+            <li
+              class="bg-containerColor mt-[50px] p-[20px] rounded-[15px] relative swiper-slide"
+            >
+              <h2 class="text-2xl font-bold">porsche</h2>
+              <h3 class="opacity-75">turbo 5</h3>
+              <div class="">
+                <img
+                  src="img/popular1.png"
+                  alt=""
+                  class="my-[20px] px-[20px] text-center m-auto"
+                />
+              </div>
+              <ul class="grid grid-cols-3 770:grid-cols-2 gap-5 mb-4">
+                <li class=""><i class="ri-dashboard-3-line"></i> 3.7 sec</li>
+                <li class=""><i class="ri-funds-box-line"></i> 356 km/h</li>
+                <li class="">
+                  <i class="ri-charging-pile-2-line"></i>356 km/h
+                </li>
+              </ul>
+              <h3 class="">$175.900</h3>
+              <i
+                class="ri-shopping-bag-2-line absolute bottom-0 right-0 bg-firstColor w-[50px] h-[50px] text-center leading-[50px] text-2xl rounded-tl-[10px] rounded-br-[10px]"
+              ></i>
+            </li>
+            <li
+              class="bg-containerColor mt-[50px] p-[20px] rounded-[15px] relative swiper-slide"
+            >
+              <h2 class="text-2xl font-bold">porsche</h2>
+              <h3 class="opacity-75">taycan</h3>
+              <div class="">
+                <img
+                  src="img/popular2.png"
+                  alt=""
+                  class="my-[20px] px-[20px] text-center m-auto"
+                />
+              </div>
+              <ul class="grid grid-cols-3 770:grid-cols-2 gap-5 mb-4">
+                <li class=""><i class="ri-dashboard-3-line"></i> 3.7 sec</li>
+                <li class=""><i class="ri-funds-box-line"></i> 356 km/h</li>
+                <li class="">
+                  <i class="ri-charging-pile-2-line"></i>356 km/h
+                </li>
+              </ul>
+              <h3 class="">$114.900</h3>
+              <i
+                class="ri-shopping-bag-2-line absolute bottom-0 right-0 bg-firstColor w-[50px] h-[50px] text-center leading-[50px] text-2xl rounded-tl-[10px] rounded-br-[10px]"
+              ></i>
+            </li>
+            <li
+              class="bg-containerColor mt-[50px] p-[20px] rounded-[15px] relative swiper-slide"
+            >
+              <h2 class="text-2xl font-bold">porsche</h2>
+              <h3 class="opacity-75">turbo 5 cross</h3>
+              <div class="">
+                <img
+                  src="img/popular3.png"
+                  alt=""
+                  class="my-[20px] px-[20px] text-center m-auto"
+                />
+              </div>
+              <ul class="grid grid-cols-3 770:grid-cols-2 gap-5 mb-4">
+                <li class=""><i class="ri-dashboard-3-line"></i> 3.7 sec</li>
+                <li class=""><i class="ri-funds-box-line"></i> 356 km/h</li>
+                <li class="">
+                  <i class="ri-charging-pile-2-line"></i>356 km/h
+                </li>
+              </ul>
+              <h3 class="">$150.900</h3>
+              <i
+                class="ri-shopping-bag-2-line absolute bottom-0 right-0 bg-firstColor w-[50px] h-[50px] text-center leading-[50px] text-2xl rounded-tl-[10px] rounded-br-[10px]"
+              ></i>
+            </li>
+            <li
+              class="bg-containerColor mt-[50px] p-[20px] rounded-[15px] relative swiper-slide"
+            >
+              <h2 class="text-2xl font-bold">porsche</h2>
+              <h3 class="opacity-75">boxster 718</h3>
+              <div class="">
+                <img
+                  src="img/popular4.png"
+                  alt=""
+                  class="my-[20px] px-[20px] text-center m-auto"
+                />
+              </div>
+              <ul class="grid grid-cols-3 770:grid-cols-2 gap-5 mb-4">
+                <li class=""><i class="ri-dashboard-3-line"></i> 3.7 sec</li>
+                <li class=""><i class="ri-funds-box-line"></i> 356 km/h</li>
+                <li class="">
+                  <i class="ri-charging-pile-2-line"></i>356 km/h
+                </li>
+              </ul>
+              <h3 class="">$125.900</h3>
+              <i
+                class="ri-shopping-bag-2-line absolute bottom-0 right-0 bg-firstColor w-[50px] h-[50px] text-center leading-[50px] text-2xl rounded-tl-[10px] rounded-br-[10px]"
+              ></i>
+            </li>
+            <li
+              class="bg-containerColor mt-[50px] p-[20px] rounded-[15px] relative swiper-slide"
+            >
+              <h2 class="text-2xl font-bold">porsche</h2>
+              <h3 class="opacity-75">cayman 5</h3>
+              <div class="">
+                <img
+                  src="img/popular5.png"
+                  alt=""
+                  class="my-[20px] px-[20px] text-center m-auto"
+                />
+              </div>
+              <ul class="grid grid-cols-3 770:grid-cols-2 gap-5 mb-4">
+                <li class=""><i class="ri-dashboard-3-line"></i> 3.7 sec</li>
+                <li class=""><i class="ri-funds-box-line"></i> 356 km/h</li>
+                <li class="">
+                  <i class="ri-charging-pile-2-line"></i>356 km/h
+                </li>
+              </ul>
+              <h3 class="">$128.900</h3>
+              <i
+                class="ri-shopping-bag-2-line absolute bottom-0 right-0 bg-firstColor w-[50px] h-[50px] text-center leading-[50px] text-2xl rounded-tl-[10px] rounded-br-[10px]"
+              ></i>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <div class="allContainer mt-[100px]">
+      <h2 class="text-center text-4xl">more feature</h2>
+      <div class="relative px-[20px] text-center mt-[60px]">
+        <img src="img/map.svg" alt="" class="mx-auto h-[750px]" />
+        <img
+          src="img/features.png"
+          alt=""
+          class="absolute top-[45%] left-[50%] w-[200px] translate-x-[-50%] translate-y-[-50%]"
+        />
+        <div
+          class="absolute top-[45%] left-[30%] 700:left-[35%] 1000:left-[42%] translate-x-[-50%] translate-y-[-50%]"
+        >
+          <ul class="">
+            <li
+              class="500:w-[180px] w-[150px] bg-[hsla(0,0%,100%,.1)] backdrop-blur-[16px] py-[1rem] px-[1.5rem ] text-center rounded-[20px]"
+            >
+              <h2>800v</h2>
+              <h3 class="">turbo</h3>
+              <h3 class="">chargin</h3>
+            </li>
+            <li
+              class="500:w-[180px] w-[150px] bg-[hsla(0,0%,100%,.1)] backdrop-blur-[16px] py-[1rem] px-[1.5rem ] text-center rounded-[20px] translate-x-[70%] 400:translate-x-[120%] 1200:translate-x-[130%]"
+            >
+              <h2>350</h2>
+              <h3 class="">km</h3>
+              <h3 class="">range</h3>
+            </li>
+            <li
+              class="500:w-[180px] w-[150px] bg-[hsla(0,0%,100%,.1)] backdrop-blur-[16px] py-[1rem] px-[1.5rem ] text-center rounded-[20px]"
+            >
+              <h2>480</h2>
+              <h3 class="">km</h3>
+              <h3 class="">travel</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="feature allContainer" id="featured">
+      <div class="">
+        <h2 class="text-center text-3xl">featured luxury cars</h2>
+      </div>
+      <div class="mt-[100px]">
+        <div
+          class="grid 500:grid-cols-4 grid-cols-3 w-[100%] 700:w-[80%] 900:w-[60%] 1300:w-[40%] text-center m-auto gap-[50px]"
+        >
+          <span
+            class="py-[12px] ] bg-firstColor rounded-[10px] hover:opacity-90 opacity-100 duration-200 text-center text-xl"
+            data-filter="all"
+            >all</span
+          >
+          <span
+            class="py-[10px] bg-containerColor rounded-[10px] hover:opacity-90 opacity-100 duration-200 text-center"
+            data-filter=".tesla"
+            ><img src="img/logo3.png" alt="" class="w-[40%] mx-auto"
+          /></span>
+          <span
+            class="py-[10px] bg-containerColor rounded-[10px] hover:opacity-90 opacity-100 duration-200 text-center"
+            data-filter=".audi"
+            ><img
+              src="img/logo2.png"
+              alt=""
+              class="w-[40%] mx-auto translate-y-[10px]"
+          /></span>
+          <span
+            class="py-[10px] bg-containerColor rounded-[10px] hover:opacity-90 opacity-100 duration-200 text-center"
+            data-filter=".porsche"
+            ><img src="img/logo1.png" alt="" class="w-[40%] mx-auto"
+          /></span>
+        </div>
+        <ul
+          class="allFeature grid 1000:grid-cols-3 600:grid-cols-2 grid-cols-1 gap-[50px] mt-[50px]"
+        >
+          <li
+            class="feature_card bg-containerColor mt-[50px] p-[20px] rounded-[15px] relative swiper-slide tesla mix"
+          >
+            <h2 class="text-2xl font-bold">tesla</h2>
+            <h3 class="opacity-75">model 3</h3>
+            <div class="">
+              <img
+                src="img/featured1.png"
+                alt=""
+                class="my-[20px] px-[20px] text-center m-auto"
+              />
+            </div>
+
+            <h3 class="absolute bottom-6 left-6 text-2xl">$98.900</h3>
+            <i
+              class="ri-shopping-bag-2-line absolute bottom-0 right-0 bg-firstColor w-[50px] h-[50px] text-center leading-[50px] text-2xl rounded-tl-[10px] rounded-br-[10px]"
+            ></i>
+          </li>
+          <li
+            class="feature_card bg-containerColor mt-[50px] p-[20px] rounded-[15px] relative swiper-slide tesla mix"
+          >
+            <h2 class="text-2xl font-bold">tesla</h2>
+            <h3 class="opacity-75">model x</h3>
+            <div class="">
+              <img
+                src="img/featured2.png"
+                alt=""
+                class="my-[20px] px-[20px] text-center m-auto"
+              />
+            </div>
+
+            <h3 class="absolute bottom-6 left-6 text-2xl">$98.900</h3>
+
+            <i
+              class="ri-shopping-bag-2-line absolute bottom-0 right-0 bg-firstColor w-[50px] h-[50px] text-center leading-[50px] text-2xl rounded-tl-[10px] rounded-br-[10px]"
+            ></i>
+          </li>
+          <li
+            class="feature_card bg-containerColor mt-[50px] p-[20px] rounded-[15px] relative swiper-slide audi mix"
+          >
+            <h2 class="text-2xl font-bold">audi</h2>
+            <h3 class="opacity-75">e-tron</h3>
+            <div class="">
+              <img
+                src="img/featured3.png"
+                alt=""
+                class="my-[20px] px-[20px] text-center m-auto"
+              />
+            </div>
+
+            <h3 class="absolute bottom-6 left-6 text-2xl">$175.900</h3>
+
+            <i
+              class="ri-shopping-bag-2-line absolute bottom-0 right-0 bg-firstColor w-[50px] h-[50px] text-center leading-[50px] text-2xl rounded-tl-[10px] rounded-br-[10px]"
+            ></i>
+          </li>
+          <li
+            class="feature_card bg-containerColor mt-[50px] p-[20px] rounded-[15px] relative swiper-slide porsche mix"
+          >
+            <h2 class="text-2xl font-bold">porsche</h2>
+            <h3 class="opacity-75">poxster 987</h3>
+            <div class="">
+              <img
+                src="img/featured4.png"
+                alt=""
+                class="my-[20px] px-[20px] text-center m-auto"
+              />
+            </div>
+
+            <h3 class="absolute bottom-6 left-6 text-2xl">$1268.900</h3>
+
+            <i
+              class="ri-shopping-bag-2-line absolute bottom-0 right-0 bg-firstColor w-[50px] h-[50px] text-center leading-[50px] text-2xl rounded-tl-[10px] rounded-br-[10px]"
+            ></i>
+          </li>
+          <li
+            class="feature_card bg-containerColor mt-[50px] p-[20px] rounded-[15px] relative swiper-slide porsche mix"
+          >
+            <h2 class="text-2xl font-bold">porsche</h2>
+            <h3 class="opacity-75">panamera</h3>
+            <div class="">
+              <img
+                src="img/featured5.png"
+                alt=""
+                class="my-[20px] px-[20px] text-center m-auto"
+              />
+            </div>
+
+            <h3 class="absolute bottom-6 left-6 text-2xl">$98.900</h3>
+
+            <i
+              class="ri-shopping-bag-2-line absolute bottom-0 right-0 bg-firstColor w-[50px] h-[50px] text-center leading-[50px] text-2xl rounded-tl-[10px] rounded-br-[10px]"
+            ></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="mt-[150px] h-[500px] relative">
+      <img src="img/offer-bg.png" alt="" class="w-full h-full" />
+      <div
+        class="flex flex-col-reverse 1100:flex-row 1100:items-center 1100:justify-center gap-7 allContainer absolute top-[50%] translate-y-[-50%]"
+      >
+        <div class="w-[100%] 1100:w-[50%]">
+          <h2 class="text-xl 400:text-2xl 600:text-3xl 800:text-4xl">
+            do you want to receive <br />special offers?
+          </h2>
+          <p class="my-8">
+            Be the first to receive all the information about our products and
+            new cars by email by subscribing to our mailing list.
+          </p>
+          <a
+            href="#about"
+            class="py-[15px] px-[30px] bg-firstColor rounded-[5px] hover:opacity-90 opacity-100 duration-200"
+            >know more</a
+          >
+        </div>
+        <div class="w-[100%] 1100:w-[50%]">
+          <img
+            src="img/offer.png"
+            alt=""
+            class="w-[70%] mx-auto 1100:w-[100%]"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="allContainer mt-[100px]">
+      <div class="">
+        <ul
+          class="grid grid-cols-1 400:grid-cols-2 600:grid-cols-3 800:grid-cols-4 1000:grid-cols-5 1200:grid-cols-6 gap-5 items-center"
+        >
+          <li class="opacity-60">
+            <img src="img/logo1.png" alt="" class="mx-auto w-[60px]" />
+          </li>
+          <li class="opacity-60">
+            <img src="img/logo2.png" alt="" class="mx-auto w-[60px]" />
+          </li>
+          <li class="opacity-60">
+            <img src="img/logo3.png" alt="" class="mx-auto w-[60px]" />
+          </li>
+          <li class="opacity-60">
+            <img src="img/logo4.png" alt="" class="mx-auto w-[60px]" />
+          </li>
+          <li class="opacity-60">
+            <img src="img/logo5.png" alt="" class="mx-auto w-[60px]" />
+          </li>
+          <li class="opacity-60">
+            <img src="img/logo6.png" alt="" class="mx-auto w-[60px]" />
+          </li>
+        </ul>
+      </div>
+      <div class=""></div>
+    </div>
+    <div class="my-[100px]">
+      <div
+        class="allContainer grid grid-cols-1 600:grid-cols-2 700:grid-cols-3 900:grid-cols-4 gap-10"
+      >
+        <div class="1200:mx-auto">
+          <div class="z-50">
+            <i class="ri-steering-line text-3xl"></i>
+            <span class="hover:text-firstColor duration-200 text-3xl"
+              >elecar</span
+            >
+          </div>
+          <p class="opacity-80 text-[15px] mt-6">
+            We offer the best electric cars of <br />
+            the most recognized brands in <br />
+            the world.
+          </p>
+        </div>
+        <div class="1200:mx-auto">
+          <h2 class="text-2xl font-semibold">company</h2>
+          <ul class="mt-6">
+            <li class="opacity-80 hover:text-firstColor duration-300">about</li>
+            <li class="my-3 opacity-80 hover:text-firstColor duration-300">
+              cars
+            </li>
+            <li class="my-3 opacity-80 hover:text-firstColor duration-300">
+              history
+            </li>
+            <li class="my-3 opacity-80 hover:text-firstColor duration-300">
+              shop
+            </li>
+          </ul>
+        </div>
+        <div class="1200:mx-auto">
+          <h2 class="text-2xl font-semibold">information</h2>
+          <ul class="mt-6">
+            <li class="opacity-80 hover:text-firstColor duration-300">
+              Request a quote
+            </li>
+            <li class="my-3 opacity-80 hover:text-firstColor duration-300">
+              Find a dealer
+            </li>
+            <li class="my-3 opacity-80 hover:text-firstColor duration-300">
+              Contact us
+            </li>
+            <li class="my-3 opacity-80 hover:text-firstColor duration-300">
+              Services
+            </li>
+          </ul>
+        </div>
+        <div class="1200:mx-auto">
+          <h2 class="text-2xl font-semibold">follow us</h2>
+          <ul class="flex items-center mt-6">
+            <li class="hover:text-firstColor duration-300">
+              <i class="ri-facebook-fill text-2xl"></i>
+            </li>
+            <li class="mx-6 hover:text-firstColor duration-300">
+              <i class="ri-instagram-line text-2xl"></i>
+            </li>
+            <li class="hover:text-firstColor duration-300">
+              <i class="ri-twitter-fill text-2xl"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-center text-xl 500:text-2xl 800:text-3xl 1000:text-4xl">
+      created by =>
+      <span class="text-firstColor font-bold uppercase">mohamed ayman</span>
+    </h2>
+    <script src="/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    @apply scroll-smooth capitalize;
+  }
+  body {
+    @apply text-whiteColor bg-bodyColor tracking-wider font-bodyFont  select-none;
+  }
+  section {
+    @apply mt-[10px] pt-[50px];
+  }
+  header.active {
+    @apply shadow-boxShadowHeader;
+  }
+}
+@layer components {
+  .allContainer {
+    @apply px-[4%]  770:px-[10%] w-full;
+  }
+  .active_link {
+    @apply text-firstColor;
+  }
+  .navListMenu.active {
+    @apply right-0;
+  }
+}
